@@ -20,14 +20,14 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: run the sync action
-      - name: Sync upstream changes
-        id: sync
-        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
-        with:
-          upstream_sync_repo: Yidadaa/ChatGPT-Next-Web
-          upstream_sync_branch: main
-          target_sync_branch: main
-          target_repo_token: ${{ secrets.GITHUB_TOKEN }} # automatically generated, no need to set
+      # - name: Sync upstream changes
+      #   id: sync
+      #   uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+      #   with:
+      #     upstream_sync_repo: Yidadaa/ChatGPT-Next-Web
+      #     upstream_sync_branch: main
+      #     target_sync_branch: main
+      #     target_repo_token: ${{ secrets.GITHUB_TOKEN }} # automatically generated, no need to set
 
-          # Set test_mode true to run tests instead of the true action!!
-          test_mode: false
+      #     # Set test_mode true to run tests instead of the true action!!
+      #     test_mode: false
